@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — Buy Now</title>
+  <link rel="stylesheet" href="/style/buy.css">
+  <link rel="stylesheet" href="/style/index.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">Marketplace</div>
+      <div class="nav-buttons">
+        <a class="btn" href="/index.html">Home</a> 
+        <a class="btn" href="/pages/sell.html">Sell</a>
+        <a class="btn" href="/pages/login.html">Sign In</a>
+        <a class="btn" href="/pages/catr.html">Saved <span class="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="container">
+    <h1>Order now</h1>
+
+    <div class="order-summary">
+      <h2>Your Order</h2>
+      <div class="order-item">
+        <img src="/assets/Image/apple-iphone-12-pro-back.avif" alt="iPhone 12 Pro">
+        <div class="order-item-details">
+          <h3>iPhone 12 Pro</h3>
+          <div>Quantity: 1</div>
+          <div class="price">₹55,000</div>
+        </div>
+      </div>
+      <div class="total">Total: ₹55,000</div>
+    </div>
+
+    <form action="/pages/order.html" method="get">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Shipping Address" required></textarea>
+      <input type="text" placeholder="Phone Number" required>
+
+      <div class="payment-method">
+        <label for="payment">Select Payment Method</label>
+        <select name="payment" id="payment" required>
+          <option value="">--Choose Payment Method--</option>
+          <option value="credit-card">Credit / Debit Card</option>
+          <option value="upi">UPI</option>
+          <option value="cod">Cash on Delivery</option>
+        </select>
+      </div>
+
+      <button type="submit">Confirm Purchase</button>
+    
+    </form>
+  </div>
+      <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Marketplace</h3>
+                <p>Marketplace is your trusted online platform to buy and sell quality pre-owned products easily and safely across India.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: support@marketplace.in</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Address: Chennai, Tamil Nadu</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Marketplace. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

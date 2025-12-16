@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sell — Marketplace</title>
+  <link rel="stylesheet" href="/style/sell.css">
+  <link rel="stylesheet" href="/style/index.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">Marketplace</div>
+      <div class="nav-buttons">
+        <a href="/index.html" class="btn">Home</a>
+        <a href="/pages/sell.html" class="btn btn-sell">Sell</a>
+        <a href="/pages/login.html" class="btn btn-signup">Sign In</a>
+        <a href="/pages/catr.html" class="btn btn-cart">
+          Saved <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Sell Your Product</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div>
+        <label for="title">Product Title </label>
+        <input type="text" id="title" name="title" placeholder="e.g., Wooden Chair" required>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="category">Category </label>
+          <select id="category" name="category" required>
+            <option value="">Select Category</option>
+            <option>Furniture</option>
+            <option>Electronics</option>
+            <option>Vehicles</option>
+            <option>Mobiles</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="condition">Condition </label>
+          <select id="condition" name="condition" required>
+            <option value="">Select Condition</option>
+            <option>New</option>
+            <option>Like New</option>
+            <option>Good</option>
+            <option>Used</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="price">Price (₹) </label>
+          <input type="number" id="price" name="price" placeholder="e.g., 5000" required>
+        </div>
+        <div class="col">
+          <label for="location">Location </label>
+          <input type="text" id="location" name="location" placeholder="City, area" required>
+        </div>
+      </div>
+
+     
+      <div>
+        <label for="email">Seller Email </label>
+        <input type="email" id="email" name="email" placeholder="e.g., seller@example.com" required>
+      </div>
+
+      <div>
+        <label for="description">Description </label>
+        <textarea id="description" name="description" placeholder="Describe your item in detail..." required></textarea>
+      </div>
+
+      <div>
+        <label for="images">Upload Product Images </label>
+        <input type="file" id="images" name="images[]" accept="image/*" multiple required>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About Marketplace</h3>
+        <p>Marketplace is your trusted online platform to buy and sell quality pre-owned products easily and safely across India.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: support@marketplace.in</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Chennai, Tamil Nadu</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Marketplace. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

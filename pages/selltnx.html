@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thanks — Marketplace</title>
+  <link rel="stylesheet" href="/style/index.css">
+  <style>
+
+
+header {
+  background: #7e22ce;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-buttons .btn {
+  font-size: large;
+  color: black;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav-buttons .btn:hover {
+  color: black;
+  text-decoration: underline;
+  color: white;
+}
+.btn-cart {
+  position: relative;
+}
+.cart-count {
+  padding: 3px 8px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+    main.thankyou {
+      flex: 1;
+      width: 90%;
+      max-width: 600px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    main.thankyou h2 {
+      color: #7e22ce;
+      margin-bottom: 15px;
+    }
+
+    main.thankyou p {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">Marketplace</div>
+      <div class="nav-buttons">
+        <a href="/index.html">Home</a>
+        <a href="/pages/sell.html">Sell</a>
+        <a href="/pages/login.html">Sign In</a>
+        <a href="/pages/cart.html">Saved <span class="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="thankyou">
+    <h2>Thank You!</h2>
+    <p>Your product listing has been successfully submitted.</p>
+  </main>
+
+</body>
+</html>

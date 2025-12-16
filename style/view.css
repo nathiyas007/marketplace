@@ -1,0 +1,106 @@
+.container {
+  max-width: 800px;
+  margin: 0 ;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: none; 
+  border: #c0c0c0 solid;
+}
+
+.logo{
+  color: white;
+}
+
+img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #7e22ce;
+  margin-bottom: 10px; 
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 22px;
+  color: #7e22ce;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  padding-bottom: 20px;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+
+a.btn-back {
+  background: #b2b2b2;
+}
+
+a.btn-back:hover {
+  background: #7e22ce;
+}
+
+
+a.btn-buy {
+  background: #7b39ff;
+}
+
+a.btn, button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+  background: #7e22ce;
+  color: #fff;        
+  cursor: pointer;
+}
+.seller-info {
+  margin-top: 25px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.seller-info h2 {
+  margin-bottom: 10px;
+  color: #7e22ce;
+  font-size: 22px;
+}
+
+.seller-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}

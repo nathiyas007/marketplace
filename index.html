@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="/style/index.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">Marketplace
+            </div>
+            <div class="nav-buttons">
+                <a class="btn btn-home" href="index.html">Home</a> 
+                <a class="btn btn-sell" href="pages/sell.html">Sell</a>
+                <a class="btn btn-signup" href="pages/login.html">Sign In</a>
+                <a class="btn btn-cart" href="pages/catr.html">
+                    Saved <span class="cart-count">3</span>
+                </a>
+                <a class="btn btn-status" href="/pages/status.html">My Status</a>
+                <label for="filter-checkbox" id="filters">Filter</label>
+            </div>
+        </div>
+    </header>
+
+    <input type="checkbox" id="filter-checkbox">
+
+    <div class="filter-panel">
+        <h3>Filter Products</h3>
+
+        <div class="filter-group">
+            <h4>Condition</h4>
+            <label><input type="checkbox" name="condition" value="Excellent"> Excellent</label>
+            <label><input type="checkbox" name="condition" value="Good"> Good</label>
+            <label><input type="checkbox" name="condition" value="Like New"> Like New</label>
+        </div>
+
+        <div class="filter-group">
+            <h4>Category</h4>
+            <label><input type="checkbox" name="category" value="Electronics"> Electronics</label>
+            <label><input type="checkbox" name="category" value="Furniture"> Furniture</label>
+            <label><input type="checkbox" name="category" value="Appliances"> Appliances</label>
+            <label><input type="checkbox" name="category" value="Tailoring"> Tailoring</label>
+        </div>
+
+        <div class="filter-group">
+            <h4>Price Range</h4>
+            <label><input type="checkbox" name="price" value="0-10000"> ₹0 - ₹10,000</label>
+            <label><input type="checkbox" name="price" value="10001-50000"> ₹10,001 - ₹50,000</label>
+            <label><input type="checkbox" name="price" value="50001-100000"> ₹50,001 - ₹1,00,000</label>
+        </div>
+        
+
+        <button class="apply-filter-btn">Apply Filter</button>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <img src="/assets/image/apple-iphone-12-pro-back.avif" alt="iPhone 12 Pro">
+                    <div class="product-content">
+                        <div>
+                            <div class="product-name">iPhone 12 Pro</div>
+                            <div class="product-description">Excellent condition, barely used. Comes with original box and accessories. 128GB storage.</div>
+                            <div class="seller-name">Sold by: Rajesh Kumar</div>
+                            <div class="product-location">Location: Chennai, T Nagar</div>
+                            <div class="product-condition">Excellent</div>
+                            <div class="product-prices"><span class="selling-price">₹55,000</span></div>
+                        </div>
+                        <div class="product-actions">
+                            <a class="btn-view" href="pages/view.html">View Details</a>
+                            <a class="btn-save" href="pages/catr.html"><span class="heart">♥</span> Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="/assets/image/dell laptop.avif" alt="Dell Laptop">
+                    <div class="product-content">
+                        <div>
+                            <div class="product-name">Dell Laptop</div>
+                            <div class="product-description">Dell Inspiron 15, Intel i5, 8GB RAM, 512GB SSD. Perfect for work and study.</div>
+                            <div class="seller-name">Sold by: Priya Sharma</div>
+                            <div class="product-location">Location: Bangalore, Koramangala</div>
+                            <div class="product-condition">Good</div>
+                            <div class="product-prices"><span class="selling-price">₹15,000</span></div>
+                        </div>
+                        <div class="product-actions">
+                            <a class="btn-view" href="pages/view.html">View Details</a>
+                            <a class="btn-save" href="pages/catr.html"><span class="heart">♥</span> Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500" alt="Samsung TV">
+                    <div class="product-content">
+                        <div>
+                            <div class="product-name">Samsung 55 inch TV</div>
+                            <div class="product-description">4K Smart TV with HDR, excellent picture quality. Moving to a new place, need to sell quickly.</div>
+                            <div class="seller-name">Sold by: Arjun Mehta
+                            </div>
+                            <div class="product-location">Location: Hyderabad, Hitech City</div>
+                            <div class="product-condition">Excellent</div>
+                            <div class="product-prices"><span class="selling-price">₹6,000</span></div>
+                        </div>
+                        <div class="product-actions">
+                            <a class="btn-view" href="pages/view.html">View Details</a>
+                            <a class="btn-save" href="pages/catr.html"><span class="heart">♥</span> Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="/assets/image/sofa set.jpg" alt="Luxury 5-Seater Sofa Set">
+                    <div class="product-content">
+                        <div>
+                            <div class="product-name">5-Seater L-Shaped Sofa Set</div>
+                            <div class="product-description">Almost new L-shaped sofa. Premium velvet fabric and durable wooden frame. High-comfort seating.</div>
+                            <div class="seller-name">Sold by: Rajesh Kumar</div>
+                            <div class="product-location">Location: Chennai, T Nagar</div>
+                            <div class="product-condition">Like New</div>
+                            <div class="product-prices"><span class="selling-price">₹2,500</span></div>
+                        </div>
+                        <div class="product-actions">
+                            <a class="btn-view" href="pages/sofa-set-view.html">View Details</a>
+                            <a class="btn-save" href="pages/catr.html"><span class="heart">♥</span> Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="/assets/image/Usha tailor deluxe sweing machine.jpg" alt="Usha Industrial Sewing Machine">
+                    <div class="product-content">
+                        <div>
+                            <div class="product-name">Usha Industrial Tailoring Machine</div>
+                            <div class="product-description">Heavy-duty industrial sewing machine, perfect for large-scale tailoring or professional use. Excellent working condition with all accessories.</div>
+                            <div class="seller-name">Sold by: Priya Traders</div>
+                            <div class="product-location">Location: Coimbatore, Gandhipuram</div>
+                            <div class="product-condition">Good</div>
+                            <div class="product-prices"><span class="selling-price">₹5,000</span></div>
+                        </div>
+                        <div class="product-actions">
+                            <a class="btn-view" href="pages/usha-machine-view.html">View Details</a>
+                            <a class="btn-save" href="pages/catr.html"><span class="heart">♥</span> Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="/assets/image/dressing table.jpg" alt="Modern Wooden Dressing Table">
+                    <div class="product-content">
+                        <div>
+                            <div class="product-name">Modern Wooden Dressing Table with Storage</div>
+                            <div class="product-description">Stylish dressing table with a large mirror and three deep drawers for storage. Solid wood construction, light usage. Perfect for any bedroom.</div>
+                            <div class="seller-name">Sold by: Kavitha S.</div>
+                            <div class="product-location">Location: Pune, Viman Nagar</div>
+                            <div class="product-condition">Like New</div>
+                            <div class="product-prices"><span class="selling-price">₹8,500</span></div>
+                        </div>
+                        <div class="product-actions">
+                            <a class="btn-view" href="pages/dressing-table-view.html">View Details</a>
+                            <a class="btn-save" href="pages/catr.html"><span class="heart">♥</span> Save</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Marketplace</h3>
+                <p>Marketplace is your trusted online platform to buy and sell quality pre-owned products easily and safely across India.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: support@marketplace.in</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Address: Chennai, Tamil Nadu</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Marketplace. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
